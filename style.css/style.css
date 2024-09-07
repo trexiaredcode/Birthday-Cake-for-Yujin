@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+.cake {
+    width: 200px;
+    height: 100px;
+    background-color: #3a3a3a; /* Dark gray for a minimalist look */
+    border-radius: 10px;
+    margin: 50px auto;
+    position: relative;
+    border: 2px solid #1a1a1a; /* Darker border for contrast */
+}
+.cake:before {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 30px;
+    background-color: #1a1a1a; /* Darker top for the cake */
+    border-radius: 5px;
+    margin: 0 auto;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#name {
+    color: #fff; /* White text for the name */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.candle {
+    width: 10px;
+    height: 30px;
+    background-color: #ffcc00; /* Yellow candle */
+    position: absolute;
+    top: -40px;
+}
+.candle:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 10px;
+    background-color: #ff9900; /* Orange flame */
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
