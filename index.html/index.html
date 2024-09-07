@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Cake for Eugene</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Blow the Birthday Candle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Happy Birthday, Eugene!</h1>
-    <div id="cake" class="cake">
-        <div id="name">Eugene</div>
-    </div>
-    <button onclick="addCandle()">Add Candle</button>
-    <button onclick="blowCandle()">Blow Candles</button>
+    <h1 id="h1">Happy Birthday Eugene!</h1>
     
-    <audio id="birthdaySong" src="happy_birthday.mp3" preload="auto"></audio>
+    <div class="birthday-cake">
+        <div class="holder"></div>
+        <div class="shadow"></div>
+        <div class="cake">
+            <div class="chocolate"></div>
+        </div>
+        <div class="candle"></div>
+        <div class="flame" id="flame"></div>
+    </div>
+
+    <audio id="BACKGROUND MUSIC" controls>
+        <source src="happybirthday.mp3" type="audio/mp3">
+        
+    </audio>
+    <!-- Button to blow out the candle -->
+    <button id="blowButton">Blow the candle!</button>
 
     <script src="script.js"></script>
 </body>
